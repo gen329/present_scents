@@ -16,3 +16,5 @@ Sure, it feels a bit weird at first, like we're talking to ourselves in a foreig
 So, if you're tired of the negativity and ready to embrace some self-love, you're in the right place. Shop with us, and let's rewrite that inner dialogue together. Because seriously, you deserve all the love and kindness in the world, flaws and all.
 
 Welcome to Present Scents – where self-empowerment meets self-love. Let's speak kindly to ourselves! 🌟
+
+Wireframe: https://www.canva.com/design/DAGE8aBdksI/NYEArWBHBOBk4q1zdQbVzg/edit
