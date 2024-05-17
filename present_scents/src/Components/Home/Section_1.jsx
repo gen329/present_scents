@@ -21,8 +21,7 @@ const Container = styled.section`
   grid-template-rows: 1fr 1fr;
 `;
 const Box = styled.div`
-  height: 50%;
-  width: 50%;
+  border: 2px solid red;
 `;
 const Box_Text = styled(Box)`
   display: flex;
