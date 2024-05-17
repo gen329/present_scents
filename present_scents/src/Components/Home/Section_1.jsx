@@ -5,7 +5,7 @@ const Section_1 = () => {
   return (
     <Container>
       <Box_Img />
-      <Box_Text >
+      <Box_Text color="#e9ff70" >
         <H1>Our Brand Story</H1>
         <div>
           <p>Welcome to Present Scents, where we're all about flipping the script on self-criticism and embracing self-empowerment!</p>
@@ -16,7 +16,13 @@ const Section_1 = () => {
           <p>So, if you're tired of the negativity and ready to embrace some self-love, you're in the right place. Shop with us, and let's rewrite that inner dialogue together. Because seriously, you deserve all the love and kindness in the world, flaws and all.</p>
         </div>
       </Box_Text>
-      <Box_Text />
+      <Box_Text color="#ff9770">
+        <h3>Present Scents</h3>
+        <div>
+          <H1_Yellow>Speak kindly to yourself.</H1_Yellow>
+          <button>Shop Now</button>
+        </div>
+      </Box_Text>
       <Box_Img />
     </Container>
   );
@@ -35,6 +41,7 @@ const Box = styled.div`
   display: flex;
 `;
 const Box_Text = styled(Box)`
+  background: ${props => props.color} ;
   display: flex;
   flex-direction: column;
   padding: 25px;
@@ -45,6 +52,9 @@ const H1 = styled.h1`
   font-size: 2rem;
   margin: 0;
 `;
+const H1_Yellow = styled(H1)`
+  color: yellow;
+`
 
 
 export default Section_1;
