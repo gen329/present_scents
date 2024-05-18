@@ -4,7 +4,9 @@ import styled from 'styled-components';
 const Section_1 = () => {
   return (
     <Container>
-      <Box_Img />
+      <Box_Img>
+        <img src="" alt="img" />
+      </Box_Img>
       <Box_Text color="#e9ff70" >
         <H1>Our Brand Story</H1>
         <div>
@@ -17,19 +19,20 @@ const Section_1 = () => {
         </div>
       </Box_Text>
       <Box_Text color="#ff9770">
-        <h3>Present Scents</h3>
-        <div>
+        <Present_Scents />
+        <Button_Wrap>
           <H1_Yellow>Speak kindly to yourself.</H1_Yellow>
-          <button>Shop Now</button>
-        </div>
+          <Button>SHOP NOW</Button>
+        </Button_Wrap>
       </Box_Text>
-      <Box_Img />
+      <Box_Img>
+        <img src="" alt="img" />
+      </Box_Img>
     </Container>
   );
 };
 
 const Container = styled.section`
-  border: 1px solid black;
   width: 100vw;
   height: 100vw;
   display: grid;
@@ -37,24 +40,60 @@ const Container = styled.section`
   grid-template-rows: 1fr 1fr;
 `;
 const Box = styled.div`
-  border: 2px solid red;
   display: flex;
 `;
 const Box_Text = styled(Box)`
   background: ${props => props.color} ;
   display: flex;
+  font-family: Garbata;
   flex-direction: column;
-  padding: 25px;
+  justify-content: space-between;
+  padding: 50px;
+  color: #a6603a;
+  font-weight: 100;
 `;
 const Box_Img = styled(Box)`
-`
+`;
+const Button_Wrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  width: 70%;
+`;
 const H1 = styled.h1`
   font-size: 2rem;
+  font-weight: 100;
   margin: 0;
 `;
 const H1_Yellow = styled(H1)`
   color: yellow;
-`
+  font-weight: 100;
+  font-size: 2.5rem;
+`;
+const Button = styled.button`
+  width: 40%;
+  padding: 10px 30px 10px 30px;
+  background: none;
+  border: 1px solid rgb(255,255,255,0.3);
+  color: #e9ff70;
+  text-wrap: nowrap;
+  &:hover {
+    box-shadow: 0 0 5px 5px #e9ff70;
+    transform: scale(1.03);
+    transition: all 0.1s linear;
+  }
+`;
+const Present_Scents = styled.h2`
+font-size: 1rem;
+color: #e9ff70;
+height: 5%;
+width: 50%;
+
+&:before{
+  content: "PRESENT SCENTS";
+}
+`;
+
 
 
 export default Section_1;
