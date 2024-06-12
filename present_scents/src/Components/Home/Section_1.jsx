@@ -1,11 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import enoughboth from '../assets/enoughboth.jpg';
+import restboth from '../assets/restboth.jpg';
 
 const Section_1 = () => {
   return (
     <Container>
       <Box_Img>
-        <img src="" alt="img" />
+        <img src={enoughboth} alt="Enough Both" />
       </Box_Img>
       <Box_Text color="#e9ff70" >
         <H1>Our Brand Story</H1>
@@ -26,7 +28,7 @@ const Section_1 = () => {
         </Button_Wrap>
       </Box_Text>
       <Box_Img>
-        <img src="" alt="img" />
+        <img src={restboth} alt="Rest Both" />
       </Box_Img>
     </Container>
   );
@@ -53,6 +55,8 @@ const Box_Text = styled(Box)`
   font-weight: 100;
 `;
 const Box_Img = styled(Box)`
+  height: 650px;
+  width: 70%;
 `;
 const Button_Wrap = styled.div`
   display: flex;
