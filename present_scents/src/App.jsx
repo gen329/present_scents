@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductList from './Components/Home/ProductList'
+// import ProductList from './Components/Home/ProductList'
 import { Link } from 'react-router-dom';
 
 import Home from './Pages/Home';
@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Home />
-      <ProductList />
+      {/* <ProductList /> */}
     </>
   )
 }
